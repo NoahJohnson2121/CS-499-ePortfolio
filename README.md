@@ -91,6 +91,11 @@ The original project is available below for comparison with the enhanced version
 
 ---
 
+## Code Review Video
+
+The following video provides an overview of my original Travlr Getaways artifact and the planned enhancements I identified during my CS-499 code review. The video discusses the existing application's strengths and areas for improvement and explains the reasoning behind the enhancements completed throughout the capstone.
+
+
 # Enhancement 1 - Software Design and Engineering
 
 ## Overview
