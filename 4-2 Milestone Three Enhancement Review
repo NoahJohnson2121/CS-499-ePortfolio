@@ -1,0 +1,8 @@
+Noah Johnson
+July 20th, 2026
+CS 499
+4-2 Milestone Three: Enhancement Two Journal
+
+The artifact I selected for my ePortfolio is the Travlr Getaways full-stack web application that I developed during my CS-465 Full Stack Development course. This application was created to provide users with a travel management system where they can view available trips and interact with trip information through a web-based interface. The application uses a combination of technologies including Node.js, Express, MongoDB, Mongoose, and Angular to create a complete full-stack solution.
+The original artifact included functionality for retrieving, creating, updating, and deleting trip information. The backend API provided routes for accessing trip data from the MongoDB database and allowed authenticated users to manage trip records. While the application successfully implemented basic CRUD operations, the original version had limited functionality for users who needed to locate specific trips from a larger collection of available travel options.
+For my CS-499 enhancement, I focused on improving the application's algorithms and data structures capabilities by implementing a search functionality within the backend API. This enhancement allows users to search for trips based on relevant information such as trip name, resort, and description.
