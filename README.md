@@ -179,22 +179,3 @@ My Computer Science education originally led me toward careers in software devel
 The technical skills demonstrated through this portfolio remain directly relevant to that goal. Software development, cybersecurity, databases, algorithms, and problem solving are all valuable skills for working with modern military technology and information systems.
 
 My goal is to combine the technical foundation developed through my Computer Science degree with leadership and military service.
-
----
-
-# Repository Structure
-
-The repository contains the source code and supporting materials for the CS-499 artifact.
-
-```text
-CS-499-ePortfolio/
-│
-├── Travlr-Getaways/
-│   ├── app_api/
-│   ├── app_server/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-│
-├── README.md
-└── Documentation/
