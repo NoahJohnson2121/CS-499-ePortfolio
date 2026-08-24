@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Original Travlr Code Review | Noah Johnson</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Original Code Review | Noah Johnson</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Original Travlr Getaways Code Review</h1>
-    <p>Noah Johnson | CS-499</p>
+    <div class="header-inner">
+        <h1>Original Travlr Getaways Code Review</h1>
+        <p>Noah Johnson | Computer Science CS-499</p>
+    </div>
 </header>
 
 <nav>
-    <a href="../index.html">Home</a>
-    <a href="original-code-review.html">Original Code Review</a>
-    <a href="milestone-two-review.html">Software Engineering</a>
-    <a href="milestone-three-review.html">Algorithms & Data Structures</a>
-    <a href="milestone-four-review.html">Databases</a>
+    <div class="nav-inner">
+        <a href="index.html">Home</a>
+        <a href="original-code-review.html">Original Code Review</a>
+        <a href="milestone-two-review.html">Software Engineering</a>
+        <a href="milestone-three-review.html">Algorithms &amp; Data Structures</a>
+        <a href="milestone-four-review.html">Databases</a>
+    </div>
 </nav>
 
 <main>
+
+<section class="card">
 
     <h2>Overview</h2>
 
@@ -30,56 +36,57 @@
         The Travlr Getaways application was originally developed as part of
         CS-465 Full Stack Development. It is a full-stack travel application
         that uses Angular for the client-side interface, Node.js and Express
-        for the backend API, and MongoDB for data storage. The application
-        allows users to browse available trips, while authenticated users can
-        perform administrative functions such as adding, updating, and
-        deleting trip information.
+        for the backend API, and MongoDB for data storage.
     </p>
 
     <p>
-        The original application provided the core functionality required for
-        the project, but the code review identified several areas that could
-        be improved. The review focused on code structure, error handling,
-        security, validation, database design, and maintainability.
+        The application allows users to browse available trips, while
+        authenticated users can perform administrative functions such as
+        adding, updating, and deleting trip information.
+    </p>
+
+    <p>
+        The original application provided the core functionality required
+        for the project, but the code review identified several areas that
+        could be improved. The review focused on code structure, error
+        handling, security, validation, database design, and maintainability.
     </p>
 
     <h2>Software Design and Engineering</h2>
 
     <p>
         The original application was organized into separate frontend and
-        backend components, which provided a reasonable foundation for
-        maintainability. The Express routes separated API endpoints from the
+        backend components, providing a reasonable foundation for
+        maintainability. Express routes separated API endpoints from
         controller logic, while Angular components were responsible for
         displaying and interacting with trip data.
     </p>
 
     <p>
-        However, several areas could be improved. Some of the original backend
-        code used basic error handling and returned database errors directly
-        to the client. This could expose unnecessary implementation details
-        and make responses less consistent. The API could also benefit from
-        more standardized HTTP responses and clearer error messages.
+        However, several areas could be improved. Some of the original
+        backend code used basic error handling and returned database errors
+        directly to the client. This could expose unnecessary implementation
+        details and make responses less consistent.
     </p>
 
     <p>
         Authentication and authorization were another area identified during
-        the review. Administrative operations such as creating, updating, and
-        deleting trips should be protected so that unauthorized users cannot
-        modify application data. Strengthening authentication around these
-        endpoints would improve the application's security.
+        the review. Administrative operations such as creating, updating,
+        and deleting trips should be protected so unauthorized users cannot
+        modify application data.
     </p>
 
     <p>
-        The code also contained opportunities for improved documentation and
-        consistency. Adding clearer comments and organizing repeated
-        functionality would make the application easier for another developer
-        to understand and maintain.
+        The code also contained opportunities for improved documentation
+        and consistency. Adding clearer comments and organizing repeated
+        functionality would make the application easier for another
+        developer to understand and maintain.
     </p>
 
     <h3>Planned Improvement</h3>
 
     <p>
-        The planned enhancement was to improve the backend's structure, error
+        The planned enhancement was to improve the backend structure, error
         handling, authentication, validation, and documentation while
         maintaining the application's existing functionality.
     </p>
@@ -88,23 +95,16 @@
 
     <p>
         The original application retrieved trips from MongoDB and displayed
-        them to the user. The basic retrieval functionality worked, but there
-        was limited functionality for efficiently locating specific trips
-        from the user interface.
+        them to the user. The basic retrieval functionality worked, but
+        there was limited functionality for efficiently locating specific
+        trips from a larger collection.
     </p>
 
     <p>
         The application already used MongoDB queries to retrieve individual
         trips by their trip code. However, the user experience could be
-        improved by providing a search capability that allows users to locate
-        trips based on relevant information rather than requiring them to
-        navigate through the entire list.
-    </p>
-
-    <p>
-        The code review also considered the structure of the application's
-        data retrieval operations. Database queries should be appropriately
-        targeted and should avoid unnecessary processing when possible.
+        improved by providing a search capability that allows users to
+        locate trips based on relevant information.
     </p>
 
     <h3>Planned Improvement</h3>
@@ -112,92 +112,73 @@
     <p>
         The planned enhancement was to add search functionality that would
         allow users to more easily locate relevant trip information. This
-        would demonstrate algorithmic problem solving and the practical
-        application of data retrieval techniques.
+        would demonstrate algorithmic problem solving and practical data
+        retrieval techniques.
     </p>
 
     <h2>Databases</h2>
 
     <p>
         The original application used MongoDB with Mongoose to store and
-        manage trip information. The database structure provided the necessary
-        fields for displaying destinations, including the trip code, name,
-        length, resort, price, image, and description.
+        manage trip information. The database structure provided the
+        necessary fields for displaying destinations, including the trip
+        code, name, length, resort, price, image, and description.
     </p>
 
     <p>
-        The review identified opportunities to improve data integrity through
-        stronger schema validation. Some fields had limited restrictions on
-        the values that could be stored, which could allow incomplete or
-        inconsistent data to enter the database.
+        The review identified opportunities to improve data integrity
+        through stronger schema validation. Some fields had limited
+        restrictions on the values that could be stored, which could allow
+        incomplete or inconsistent data to enter the database.
     </p>
 
     <p>
         The original schema also provided an opportunity to improve database
-        performance and reliability through appropriate indexing and
-        constraints. For example, trip codes should uniquely identify
-        individual trips and therefore are appropriate candidates for a unique
-        database index.
-    </p>
-
-    <p>
-        Another consideration was the data type used for the price field.
-        Storing prices as strings limits the ability to perform numeric
-        operations or comparisons on the data. Improving the schema would
-        make the database more consistent and easier to work with in future
-        functionality.
+        reliability through appropriate constraints and indexing. Trip
+        codes should uniquely identify individual trips and therefore are
+        appropriate candidates for a unique database index.
     </p>
 
     <h3>Planned Improvement</h3>
 
     <p>
-        The planned database enhancement was to strengthen the Mongoose schema
-        through validation, data integrity rules, appropriate indexing, and
-        improved data types where appropriate.
+        The planned database enhancement was to strengthen the Mongoose
+        schema through validation, data integrity rules, appropriate
+        indexing, and improved data handling.
     </p>
 
     <h2>Overall Code Review Findings</h2>
 
-    <p>
-        The original Travlr Getaways application successfully implemented its
-        core requirements, but the review demonstrated that functioning
-        software can still have opportunities for improvement. The primary
-        areas identified were:
-    </p>
-
     <ul>
-        <li><strong>Security:</strong> Strengthen authentication and protect administrative API operations.</li>
-        <li><strong>Error handling:</strong> Provide consistent responses without unnecessarily exposing internal errors.</li>
-        <li><strong>Validation:</strong> Prevent invalid or incomplete information from being stored.</li>
-        <li><strong>Database integrity:</strong> Improve schema restrictions and indexing.</li>
-        <li><strong>Maintainability:</strong> Improve documentation, organization, and consistency.</li>
-        <li><strong>Functionality:</strong> Add search capabilities to improve the user experience.</li>
-        <li><strong>Data handling:</strong> Improve how application data is retrieved and processed.</li>
+        <li>Strengthen authentication and protect administrative API operations.</li>
+        <li>Improve error handling and response consistency.</li>
+        <li>Strengthen input validation.</li>
+        <li>Improve database integrity and reliability.</li>
+        <li>Add search capabilities.</li>
+        <li>Improve maintainability and documentation.</li>
     </ul>
-
-    <p>
-        These findings provided the foundation for the enhancements completed
-        during CS-499. Rather than completely rewriting the application, the
-        goal was to make targeted improvements that addressed weaknesses
-        identified during the code review while preserving the application's
-        existing functionality.
-    </p>
 
     <h2>Skills Demonstrated</h2>
 
     <p>
-        This code review demonstrates my ability to analyze existing software
-        from a professional perspective, identify limitations, evaluate
-        security and data concerns, and develop a practical enhancement plan.
-        It also demonstrates the transition from simply creating software that
-        works to evaluating software based on maintainability, security,
-        reliability, efficiency, and user experience.
+        This code review demonstrates my ability to analyze existing
+        software from a professional perspective, identify limitations,
+        evaluate security and data concerns, and develop a practical
+        enhancement plan.
     </p>
+
+    <p>
+        The review also represents the transition from simply creating
+        software that works to evaluating software based on maintainability,
+        security, reliability, efficiency, and user experience.
+    </p>
+
+</section>
 
 </main>
 
 <footer>
-    <p>Noah Johnson | Computer Science CS-499 ePortfolio</p>
+    <p>Noah Johnson | CS-499 ePortfolio</p>
 </footer>
 
 </body>
