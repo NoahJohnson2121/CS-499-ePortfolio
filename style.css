@@ -1,9 +1,6 @@
 /* =========================================
    Noah Johnson - CS-499 ePortfolio
-   Main Stylesheet
    ========================================= */
-
-/* ---------- General ---------- */
 
 * {
     box-sizing: border-box;
@@ -15,115 +12,127 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f6f8;
+    line-height: 1.7;
+    background: #f5f7fa;
     color: #222;
 }
 
-/* ---------- Layout ---------- */
+/* =========================================
+   Main Layout
+   ========================================= */
 
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: 92%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* ---------- Header ---------- */
+/* =========================================
+   Header
+   ========================================= */
 
 header {
-    background-color: #172a3a;
+    background: #172a3a;
     color: white;
-    padding: 35px 0 20px;
-    border-bottom: 4px solid #3b82a0;
+    padding: 45px 0 25px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+    font-weight: 600;
 }
 
 .subtitle {
-    margin: 5px 0 25px;
-    font-size: 1.1rem;
-    color: #dbe7ee;
+    margin: 5px 0 30px;
+    font-size: 1.15rem;
+    color: #d8e3ea;
 }
 
-/* ---------- Navigation ---------- */
+/* =========================================
+   Navigation
+   ========================================= */
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 9px 15px;
+    padding: 10px 17px;
     border-radius: 5px;
-    background-color: #24445a;
-    transition: background-color 0.2s ease;
+    background: #24445a;
+    transition: 0.2s;
 }
 
 nav a:hover {
-    background-color: #3b82a0;
+    background: #3b82a0;
 }
 
-/* ---------- Main Content ---------- */
+/* =========================================
+   Main Content
+   ========================================= */
 
 main {
-    padding: 40px 0;
+    padding: 55px 0;
 }
 
 section {
-    background-color: white;
-    padding: 30px;
-    margin-bottom: 30px;
+    background: white;
+    padding: 40px;
+    margin-bottom: 40px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+section:last-child {
+    margin-bottom: 0;
 }
 
 .hero {
+    padding: 45px;
     border-left: 5px solid #3b82a0;
 }
 
 h2 {
     color: #172a3a;
+    font-size: 2rem;
     margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    margin-bottom: 25px;
 }
 
 h3 {
     color: #24445a;
-    margin-top: 25px;
+    font-size: 1.35rem;
+    margin-top: 30px;
 }
 
 p {
-    margin-bottom: 15px;
-}
-
-ul {
-    padding-left: 25px;
+    max-width: 950px;
+    margin-bottom: 18px;
 }
 
 li {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 
-/* ---------- Cards ---------- */
+/* =========================================
+   Skill Cards
+   ========================================= */
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .card {
-    background-color: #f4f6f8;
-    padding: 20px;
+    padding: 25px;
+    background: #f5f7fa;
     border-radius: 7px;
     border-top: 4px solid #3b82a0;
 }
@@ -132,135 +141,150 @@ li {
     margin-top: 0;
 }
 
-/* ---------- Review Cards ---------- */
+/* =========================================
+   Review Cards
+   ========================================= */
 
 .review-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 .review-card {
-    background-color: #f4f6f8;
-    padding: 25px;
-    border-radius: 7px;
+    padding: 30px;
+    background: #f5f7fa;
     border-left: 4px solid #3b82a0;
+    border-radius: 7px;
 }
 
 .review-card h3 {
     margin-top: 0;
 }
 
-.review-card p {
-    margin-bottom: 20px;
-}
-
-/* ---------- Buttons ---------- */
+/* =========================================
+   Buttons
+   ========================================= */
 
 .button {
     display: inline-block;
-    padding: 10px 18px;
-    background-color: #24445a;
+    padding: 11px 20px;
+    background: #24445a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.2s ease;
+    margin-top: 10px;
+    transition: 0.2s;
 }
 
 .button:hover {
-    background-color: #3b82a0;
+    background: #3b82a0;
 }
 
-/* ---------- Review Pages ---------- */
+/* =========================================
+   Review Pages
+   ========================================= */
 
 .review-container {
+    width: 92%;
     max-width: 1000px;
-    margin: 40px auto;
-    width: 90%;
+    margin: 0 auto;
+    padding: 55px 0;
 }
 
-.review-container section {
-    margin-bottom: 25px;
-}
-
-.review-title {
-    text-align: center;
+.review-container h1 {
+    color: #172a3a;
     margin-bottom: 35px;
 }
 
-/* ---------- Screenshots ---------- */
+.review-container section {
+    margin-bottom: 35px;
+}
+
+/* =========================================
+   Screenshots
+   ========================================= */
 
 .review-image {
     display: block;
     width: 100%;
-    max-width: 900px;
+    max-width: 850px;
     height: auto;
-    margin: 20px auto 40px auto;
-    border-radius: 8px;
+    margin: 30px auto 45px;
     border: 1px solid #d1d5db;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* ---------- Code Blocks ---------- */
+/* =========================================
+   Code
+   ========================================= */
 
 pre {
-    background-color: #1e293b;
+    background: #1e293b;
     color: #f8fafc;
-    padding: 20px;
+    padding: 25px;
     border-radius: 7px;
     overflow-x: auto;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 code {
     font-family: Consolas, "Courier New", monospace;
 }
 
-/* ---------- Review Links ---------- */
+/* =========================================
+   Review Navigation
+   ========================================= */
 
 .review-navigation {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
+    gap: 15px;
+    margin-top: 40px;
 }
 
-/* ---------- Video ---------- */
+/* =========================================
+   Video
+   ========================================= */
 
 .video-container {
-    position: relative;
     width: 100%;
     max-width: 900px;
-    margin: 25px auto;
+    margin: 30px auto;
     aspect-ratio: 16 / 9;
 }
 
 .video-container iframe {
     width: 100%;
     height: 100%;
-    border: none;
-    border-radius: 8px;
+    border: 0;
+    border-radius: 7px;
 }
 
-/* ---------- Footer ---------- */
+/* =========================================
+   Footer
+   ========================================= */
 
 footer {
-    background-color: #172a3a;
+    background: #172a3a;
     color: white;
     text-align: center;
-    padding: 25px 0;
-    margin-top: 20px;
+    padding: 30px 0;
+    margin-top: 50px;
 }
 
 footer p {
-    margin: 0;
-    color: #dbe7ee;
+    margin: 0 auto;
+    color: #d8e3ea;
 }
 
-/* ---------- Responsive Design ---------- */
+/* =========================================
+   Mobile
+   ========================================= */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
     .cards {
         grid-template-columns: 1fr;
@@ -271,7 +295,23 @@ footer p {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container,
+    .review-container {
+        width: 94%;
+    }
+
+    header {
+        padding: 30px 0 20px;
     }
 
     nav {
@@ -281,27 +321,19 @@ footer p {
     nav a {
         text-align: center;
     }
-}
 
-@media (max-width: 600px) {
-
-    .container {
-        width: 94%;
+    main,
+    .review-container {
+        padding: 35px 0;
     }
 
-    section {
-        padding: 20px;
-    }
-
-    main {
-        padding: 25px 0;
+    section,
+    .hero {
+        padding: 25px;
+        margin-bottom: 25px;
     }
 
     h2 {
-        font-size: 1.5rem;
-    }
-
-    .review-image {
-        margin-bottom: 25px;
+        font-size: 1.6rem;
     }
 }
