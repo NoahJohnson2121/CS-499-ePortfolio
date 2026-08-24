@@ -4,157 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorithms and Data Structures | Noah Johnson</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Enhancement Two: Algorithms and Data Structures</h1>
-    <p>Noah Johnson | CS-499 | July 20, 2026</p>
+    <div class="header-inner">
+        <h1>Milestone Three: Algorithms and Data Structures</h1>
+        <p>Noah Johnson | Computer Science CS-499 | July 20, 2026</p>
+    </div>
 </header>
 
 <nav>
-    <a href="../index.html">Home</a>
-    <a href="original-code-review.html">Original Code Review</a>
-    <a href="milestone-two-review.html">Software Engineering</a>
-    <a href="milestone-three-review.html">Algorithms & Data Structures</a>
-    <a href="milestone-four-review.html">Databases</a>
+    <div class="nav-inner">
+        <a href="index.html">Home</a>
+        <a href="original-code-review.html">Original Code Review</a>
+        <a href="milestone-two-review.html">Software Engineering</a>
+        <a href="milestone-three-review.html">Algorithms &amp; Data Structures</a>
+        <a href="milestone-four-review.html">Databases</a>
+    </div>
 </nav>
 
 <main>
+
+<section class="card">
 
     <h2>Artifact Description</h2>
 
     <p>
         The artifact I selected for my ePortfolio is the Travlr Getaways
-        full-stack web application that I developed during my CS-465 Full
-        Stack Development course.
+        full-stack web application that I developed during CS-465 Full Stack
+        Development.
     </p>
 
     <p>
-        This application was created to provide users with a travel management
-        system where they can view available trips and interact with trip
-        information through a web-based interface. The application uses a
-        combination of technologies including Node.js, Express, MongoDB,
-        Mongoose, and Angular to create a complete full-stack solution.
+        The application provides users with a travel management system
+        where they can view available trips and interact with trip
+        information through a web-based interface.
     </p>
 
     <p>
-        The original artifact included functionality for retrieving, creating,
-        updating, and deleting trip information. The backend API provided
-        routes for accessing trip data from the MongoDB database and allowed
-        authenticated users to manage trip records.
+        The application uses Node.js, Express, MongoDB, Mongoose, and
+        Angular to create a complete full-stack solution.
+    </p>
+
+    <h2>Original Functionality</h2>
+
+    <p>
+        The original artifact included functionality for retrieving,
+        creating, updating, and deleting trip information.
     </p>
 
     <p>
-        While the application successfully implemented basic CRUD operations,
-        the original version had limited functionality for users who needed to
-        locate specific trips from a larger collection of available travel
-        options.
+        The backend API provided routes for accessing trip data from the
+        MongoDB database and allowed authenticated users to manage trip
+        records.
     </p>
 
-    <h2>Algorithm and Data Structure Enhancement</h2>
+    <p>
+        While the application successfully implemented basic CRUD
+        operations, the original version had limited functionality for
+        users who needed to locate specific trips from a larger collection.
+    </p>
+
+    <h2>Algorithm Enhancement</h2>
 
     <p>
         For my CS-499 enhancement, I focused on improving the application's
-        algorithms and data structures capabilities by implementing a search
+        algorithms and data retrieval capabilities by implementing a search
         functionality within the backend API.
     </p>
 
     <p>
         This enhancement allows users to search for trips based on relevant
-        information such as trip name, resort, and description. Instead of
-        requiring users to manually review every available trip, the search
-        functionality allows the application to filter the available results
-        based on the user's search term.
+        information such as trip name, resort, and description.
     </p>
 
-    <h2>Search Implementation</h2>
+    <h3>Search Controller</h3>
 
     <p>
-        The search functionality was implemented within the backend API. A
-        new search controller processes the user's search term and queries
-        MongoDB for matching trip information.
+        I added a new <strong>tripsSearch()</strong> function to the trip
+        controller. The function accepts a search term from the user and
+        uses MongoDB query operations to locate matching trip records.
     </p>
 
     <p>
-        The search functionality uses MongoDB query operations and regular
-        expressions to search across multiple fields. The search is
-        case-insensitive, allowing users to find results without needing to
-        match the exact capitalization of stored information.
+        The search checks multiple fields, including the trip name, resort,
+        and description. Case-insensitive regular expressions are used so
+        that users do not have to enter search terms with exact
+        capitalization.
+    </p>
+
+    <h3>API Endpoint</h3>
+
+    <p>
+        I also added a new API endpoint:
     </p>
 
     <p>
-        A new API endpoint was also added to allow the application to request
-        search results:
-    </p>
-
-    <pre>
-GET /trips/search?query=value
-    </pre>
-
-    <p>
-        This route connects the user's search request to the backend search
-        functionality and returns the trips that match the provided search
-        criteria.
-    </p>
-
-    <h2>Learning and Reflection</h2>
-
-    <p>
-        Implementing this enhancement helped me better understand how
-        algorithms can be applied to practical software problems. The goal
-        was not simply to add another feature, but to create a more useful
-        method of retrieving information from the application's database.
+        <strong>GET /trips/search?query=value</strong>
     </p>
 
     <p>
-        I learned that algorithmic improvements can directly affect the user
-        experience. A well-designed search process reduces the amount of
-        information a user needs to manually review and provides a more
-        efficient way to locate relevant information.
+        This route connects user requests to the new search functionality
+        and allows the application to return filtered trip results.
+    </p>
+
+    <h2>Why the Enhancement Matters</h2>
+
+    <p>
+        Before this enhancement, the application primarily relied on
+        retrieving all trips or searching for a specific trip using its
+        trip code. This limited the ability of users to efficiently find
+        trips based on broader criteria.
     </p>
 
     <p>
-        One challenge was determining which fields should be included in the
-        search. I selected the trip name, resort, and description because
-        these fields contain information that users are most likely to use
-        when searching for a destination.
+        The new search functionality improves the user experience by
+        allowing users to locate relevant trips without manually reviewing
+        every available record.
     </p>
 
     <p>
-        Another challenge was ensuring that the search functionality worked
-        correctly with different capitalization and partial search terms.
-        Using case-insensitive regular expression matching helped make the
-        functionality more flexible.
+        This enhancement also demonstrates how algorithmic problem solving
+        can be applied directly to a real-world application. The search
+        process takes user input, evaluates multiple database fields, and
+        returns records that match the requested criteria.
     </p>
 
-    <h2>Course Outcomes</h2>
+    <h2>Reflection</h2>
 
     <p>
-        This enhancement supports the Computer Science program outcome related
-        to designing and evaluating computing solutions using algorithmic
-        principles and computer science practices.
-    </p>
-
-    <p>
-        It also demonstrates the ability to use computing techniques and tools
-        to implement a solution that provides value to users. The search
-        functionality improves the application's usability while working
-        within the existing architecture of the Travlr Getaways application.
+        This enhancement helped me better understand how algorithms and data
+        retrieval techniques can directly improve the functionality of an
+        application.
     </p>
 
     <p>
-        Overall, this enhancement allowed me to apply algorithmic problem
-        solving to an existing application while maintaining its original
-        functionality and structure.
+        Rather than adding a completely separate feature unrelated to the
+        existing application, I identified a limitation in the original
+        system and developed a solution that worked within the application's
+        existing architecture.
     </p>
+
+    <p>
+        This experience strengthened my ability to analyze an existing
+        application, identify opportunities for improvement, and implement
+        an efficient solution while preserving existing functionality.
+    </p>
+
+</section>
 
 </main>
 
 <footer>
-    <p>Noah Johnson | Computer Science CS-499 ePortfolio</p>
+    <p>Noah Johnson | CS-499 ePortfolio</p>
 </footer>
 
 </body>
