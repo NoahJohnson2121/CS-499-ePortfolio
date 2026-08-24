@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databases | Noah Johnson</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Enhancement Three: Databases</h1>
+    <p>Noah Johnson | CS-499 | July 29, 2026</p>
+</header>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="original-code-review.html">Original Code Review</a>
+    <a href="milestone-two-review.html">Software Engineering</a>
+    <a href="milestone-three-review.html">Algorithms & Data Structures</a>
+    <a href="milestone-four-review.html">Databases</a>
+</nav>
+
+<main>
+
+    <h2>Artifact Description</h2>
+
+    <p>
+        The artifact selected for my database enhancement is the Travlr
+        Getaways full-stack web application that I originally developed
+        during CS-465 Full Stack Development.
+    </p>
+
+    <p>
+        This application was created as part of my Computer Science coursework
+        and uses a MEAN stack architecture consisting of MongoDB, Express.js,
+        Angular, and Node.js. The application allows users to view travel
+        destinations while providing administrative functionality for
+        managing trip information through database-driven operations.
+    </p>
+
+    <p>
+        The database component of this application uses MongoDB with Mongoose
+        to define and manage trip data. The original artifact contained a
+        functional database structure with schema definitions and CRUD
+        operations, but there were opportunities to improve data integrity
+        and database performance.
+    </p>
+
+    <h2>Reason for Selection</h2>
+
+    <p>
+        I selected the Travlr Getaways application for my ePortfolio because
+        it demonstrates multiple areas of computer science, including software
+        engineering, algorithms, and database development.
+    </p>
+
+    <p>
+        The artifact represents my ability to build a complete full-stack
+        application and improve an existing solution through analysis and
+        refinement.
+    </p>
+
+    <h2>Database Enhancements</h2>
+
+    <p>
+        For the database enhancement, I focused on improving the reliability
+        and efficiency of the MongoDB data layer.
+    </p>
+
+    <p>
+        The original database implementation stored trip information
+        successfully but did not enforce uniqueness for trip identifiers or
+        provide all of the validation needed to ensure consistent data.
+    </p>
+
+    <p>
+        To improve this, I enhanced the Mongoose schema by adding a unique
+        constraint to the trip code field. This prevents duplicate trip
+        records from being created with the same identifier and improves
+        overall data integrity.
+    </p>
+
+    <p>
+        I also strengthened validation within the Mongoose schema by adding
+        required fields, length restrictions, trimming, and other validation
+        rules where appropriate. These changes help prevent incomplete or
+        improperly formatted information from being stored in the database.
+    </p>
+
+    <h2>Database Validation</h2>
+
+    <p>
+        The enhanced schema provides stronger rules for important trip
+        properties such as the trip code, trip name, resort, price, image,
+        and description.
+    </p>
+
+    <p>
+        These validation rules improve the consistency of the data stored in
+        MongoDB and make the database more reliable for the rest of the
+        application.
+    </p>
+
+    <h2>Enhancement Screenshots</h2>
+
+    <p>
+        The following screenshots demonstrate portions of the database
+        enhancement and the updated Mongoose schema.
+    </p>
+
+    <img src="../images/milestone-four-picture-1.png"
+         alt="Database enhancement screenshot"
+         class="review-image">
+
+    <img src="../images/milestone-four-picture-2.png"
+         alt="Database schema enhancement screenshot"
+         class="review-image">
+
+    <h2>Course Outcomes</h2>
+
+    <p>
+        The database enhancements support several Computer Science program
+        outcomes. First, they demonstrate my ability to use appropriate
+        computing techniques and tools to implement solutions that provide
+        value and meet industry needs.
+    </p>
+
+    <p>
+        By improving the database design, I strengthened the reliability and
+        maintainability of the application.
+    </p>
+
+    <p>
+        The enhancements also support the outcome related to developing a
+        security and quality-focused mindset. Ensuring that databases maintain
+        accurate and consistent information is an important part of protecting
+        application resources and preventing issues caused by invalid or
+        duplicate data.
+    </p>
+
+    <p>
+        The work also supports my ability to design and evaluate computing
+        solutions using computer science practices. Adding database
+        constraints and validation required evaluating the current design,
+        identifying limitations, and selecting improvements that provided
+        benefits without disrupting existing functionality.
+    </p>
+
+    <h2>Progress Toward Course Outcomes</h2>
+
+    <p>
+        I have continued making progress toward the planned course outcomes
+        from Module One. The software engineering and algorithm enhancements
+        have been completed, and this database enhancement completes the
+        third major category required for my ePortfolio.
+    </p>
+
+    <p>
+        Remaining work includes final testing, documentation, and polishing
+        the overall portfolio presentation.
+    </p>
+
+    <h2>Reflection</h2>
+
+    <p>
+        The process of improving the database component of the Travlr Getaways
+        application helped me better understand the importance of database
+        design decisions beyond simply storing and retrieving information.
+    </p>
+
+    <p>
+        I learned that databases require careful planning to maintain data
+        quality, improve performance, and support future application growth.
+    </p>
+
+    <p>
+        One challenge I faced during this enhancement was determining the
+        appropriate level of database modification. While there are many
+        advanced database techniques available, I focused on practical
+        improvements that benefited the existing application without
+        introducing unnecessary complexity.
+    </p>
+
+    <p>
+        I also encountered and resolved an issue involving duplicate MongoDB
+        index definitions, which helped reinforce the importance of
+        understanding how database configurations interact with application
+        frameworks.
+    </p>
+
+    <p>
+        Overall, this enhancement improved my ability to analyze an existing
+        database implementation, identify areas for improvement, and apply
+        changes that increase reliability and performance.
+    </p>
+
+    <p>
+        This experience reflects the type of continuous improvement and
+        problem-solving expected from computer science professionals.
+    </p>
+
+</main>
+
+<footer>
+    <p>Noah Johnson | Computer Science CS-499 ePortfolio</p>
+</footer>
+
+</body>
+</html>
