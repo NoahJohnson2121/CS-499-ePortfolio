@@ -1,5 +1,3 @@
-# Cplusplus-Program-CS-465
-
 # Noah Johnson - Computer Science ePortfolio
 
 ## About Me
