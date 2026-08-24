@@ -1,0 +1,34 @@
+{
+  "name": "cplusplus-program-cs-465",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "seed": "node seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahJohnson2121/Cplusplus-Program-CS-465.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NoahJohnson2121/Cplusplus-Program-CS-465/issues"
+  },
+  "homepage": "https://github.com/NoahJohnson2121/Cplusplus-Program-CS-465#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-jwt": "^8.5.1",
+    "hbs": "^4.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
