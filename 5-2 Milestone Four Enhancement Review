@@ -2,6 +2,7 @@ Noah Johnson
 July 29th, 2026
 CS 499
 5-2 Milestone Four: Enhancement Three: Databases
+
 The artifact selected for my database enhancement is the Travlr Getaways full-stack web application that I originally developed during CS-465 Full Stack Development. This application was created as part of my Computer Science coursework and uses a MEAN stack architecture consisting of MongoDB, Express.js, Angular, and Node.js. The application allows users to view travel destinations while providing administrative functionality for managing trip information through database-driven operations.
 The database component of this application uses MongoDB with Mongoose to define and manage trip data. The original artifact contained a functional database structure with schema definitions and CRUD operations, but there were opportunities to improve data integrity and database performance.
 
