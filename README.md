@@ -1,181 +1,91 @@
 # Cplusplus-Program-CS-465
 
-## Noah Johnson
+# Noah Johnson - Computer Science ePortfolio
 
-Bachelor of Science in Computer Science  
-Southern New Hampshire University
+## About Me
 
----
+Hello, my name is Noah Johnson, and I am a Computer Science student completing my Bachelor of Science degree. Throughout my program, I have developed skills in software development, database management, algorithms, data structures, cybersecurity principles, and full-stack application development.
 
-## About This Repository
+This ePortfolio represents my growth throughout the Computer Science program and showcases my ability to design, develop, analyze, and improve computing solutions. The projects included demonstrate my technical skills, problem-solving abilities, and understanding of professional software development practices.
 
-This repository contains the artifacts and enhancements completed for my CS 499 Computer Science Capstone at Southern New Hampshire University.
+## Career Goals
 
-The purpose of this portfolio is to demonstrate my growth throughout the Computer Science program and showcase my ability to analyze, improve, and document existing software. The primary artifact used throughout my capstone is the **Travlr Getaways full-stack web application**, originally developed during CS-465 Full Stack Development.
+My original career goals focused on pursuing opportunities in information technology and cybersecurity. Throughout my Computer Science program, I developed a stronger interest in technology leadership and applying my technical skills to larger organizational goals. I am currently pursuing a path toward becoming an officer in the United States Air Force, where I hope to combine my computer science background, leadership skills, and interest in technology to support mission-focused solutions.
 
-During CS-499, I reviewed the original application and made targeted enhancements in three key areas:
+My Computer Science education has provided me with the foundation needed to understand complex technical systems, evaluate security concerns, and lead technology-focused projects.
+
+## ePortfolio Purpose
+
+The purpose of this ePortfolio is to demonstrate my abilities in three major areas of computer science:
 
 - Software Design and Engineering
 - Algorithms and Data Structures
 - Databases
 
-These enhancements allowed me to apply concepts learned throughout the Computer Science program while improving the quality, security, maintainability, and functionality of an existing application.
+The artifacts included in this portfolio represent projects from my Computer Science coursework that have been enhanced to demonstrate professional growth and improved technical ability.
 
----
+## Featured Artifact
 
-## Featured Project: Travlr Getaways
+### Travlr Getaways Full-Stack Application
 
-Travlr Getaways is a full-stack travel application that allows users to view available travel destinations and provides authenticated users with functionality for managing trip information.
+The primary artifact featured in this ePortfolio is the Travlr Getaways application created during CS-465 Full Stack Development.
 
-The application uses:
+This project is a full-stack travel application developed using:
 
-- **Angular** for the client-side interface
-- **Node.js** and **Express** for the backend API
-- **MongoDB** and **Mongoose** for database management
-- **JSON Web Tokens (JWT)** for authentication
-- **HTML and CSS** for the user interface
-
-The original application provided a strong foundation, but the CS-499 enhancements focused on improving its overall quality and demonstrating professional software development practices.
-
----
-
-# CS 499 Enhancements
-
-## 1. Software Design and Engineering
-
-The software engineering enhancements focused on improving the structure, reliability, maintainability, and security of the backend application.
-
-### Enhancements Included
-
-- Improved backend controller organization
-- Improved API error handling
-- Added clearer and more consistent HTTP responses
-- Added authentication protection to trip management routes
-- Improved code documentation and readability
-- Added validation and defensive programming practices
-- Improved CRUD operations for trips
-- Improved authentication and authorization handling
-
-These changes demonstrate my ability to analyze an existing application and make practical improvements rather than simply creating new software from scratch.
-
----
-
-## 2. Algorithms and Data Structures
-
-The algorithms and data structures enhancement focused on improving how users interact with the application's trip data.
-
-### Enhancement Included
-
-- Added search functionality for trip information
-- Improved the process used to locate matching trip records
-- Used MongoDB queries to efficiently retrieve relevant data
-- Considered input handling and search behavior when designing the functionality
-
-This enhancement demonstrates my ability to apply algorithmic thinking to a real-world software problem and evaluate how data can be efficiently searched and retrieved.
-
----
-
-## 3. Databases
-
-The database enhancement focused on improving data integrity, validation, and query performance within MongoDB.
-
-### Enhancements Included
-
-- Added stronger Mongoose schema validation
-- Added required fields
-- Added string length restrictions
-- Added trimming and formatting rules
-- Added uppercase formatting for trip codes
-- Added a unique index for trip codes
-- Added timestamps to database records
-- Improved database error handling
-- Changed the price field to better support numeric database operations
-
-These improvements demonstrate my ability to design and maintain a more reliable database structure while considering data integrity and performance.
-
----
-
-# Security Improvements
-
-Security was an important consideration throughout the CS 499 enhancements.
-
-The application uses authentication to protect administrative trip-management operations. JWT authentication is used to verify users before allowing protected operations such as:
-
-- Creating trips
-- Updating trips
-- Deleting trips
-
-The application also uses validation and defensive programming to reduce the possibility of invalid data being stored in the database.
-
----
-
-# Skills Demonstrated
-
-This project demonstrates skills in:
-
-- Full-stack web development
-- JavaScript
-- TypeScript
-- Angular
 - Node.js
-- Express
+- Express.js
+- Angular
 - MongoDB
 - Mongoose
-- REST APIs
-- Authentication
-- JWT
-- CRUD operations
-- Database design
-- Data validation
-- Algorithms and search
-- Error handling
-- Secure software development
-- Debugging
-- Code documentation
-- Software enhancement and refactoring
 
----
+The application provides functionality for managing and displaying travel information through a database-driven web application.
 
-# Computer Science Program Outcomes
+Throughout CS-499, this artifact was enhanced to improve software engineering practices, algorithmic functionality, and database interaction.
 
-The enhancements contribute to several Southern New Hampshire University Computer Science program outcomes.
+## Enhancements Completed
 
-### Algorithmic Problem Solving
+### Software Design and Engineering
 
-I demonstrated the ability to evaluate and improve solutions using algorithmic principles, particularly through search functionality and efficient data retrieval.
+Enhancements focused on improving the overall structure and maintainability of the application. Improvements included:
 
-### Software Engineering and Design
+- Improved backend organization
+- Enhanced error handling
+- Added authentication and authorization functionality
+- Improved API structure and documentation
+- Applied secure coding practices
 
-I improved an existing software system using professional development practices, including modular organization, error handling, validation, authentication, and maintainable code.
+### Algorithms and Data Structures
 
-### Database Development
+Enhancements focused on improving how users interact with and retrieve information from the application.
 
-I improved the MongoDB data model through schema validation, indexing, data integrity rules, and improved database operations.
+Improvements included:
 
-### Security
+- Added trip search functionality
+- Implemented database filtering based on user input
+- Improved data retrieval efficiency
 
-I incorporated a security mindset by protecting administrative API routes through authentication and validating data before it is stored or modified.
+### Databases
 
-### Professional Communication
+Enhancements focused on improving database integration and reliability.
 
-The project also demonstrates my ability to explain technical decisions through code documentation, code review, written narratives, and my professional ePortfolio.
+Improvements included:
 
----
+- Improved MongoDB data handling
+- Strengthened Mongoose model usage
+- Improved database queries and validation
 
-# Original vs. Enhanced Work
+## Technical Skills Demonstrated
 
-The original Travlr Getaways application was created as part of my coursework in **CS-465 Full Stack Development**.
+Through these artifacts, this ePortfolio demonstrates my experience with:
 
-For CS-499, I used the original application as a foundation and performed targeted enhancements rather than completely rebuilding the project. This allowed me to demonstrate my ability to identify weaknesses in existing software and determine appropriate improvements.
+- Full-stack web development
+- Backend API development
+- Database design and management
+- Algorithm implementation
+- Secure software development practices
+- Debugging and code improvement
+- Professional documentation
 
-The enhanced project represents the final version of the artifact after applying the planned CS-499 improvements.
+## Future Development
 
----
-
-# Career Goals
-
-My Computer Science education originally led me toward careers in software development, IT, and cybersecurity. As I progressed through the program, my career goals evolved toward pursuing a commission as an **Air Force officer**.
-
-The technical skills demonstrated through this portfolio remain directly relevant to that goal. Software development, cybersecurity, databases, algorithms, and problem solving are all valuable skills for working with modern military technology and information systems.
-
-My goal is to combine the technical foundation developed through my Computer Science degree with leadership and military service.
+As I continue developing as a computer science professional, I plan to expand my knowledge of cybersecurity, software engineering, and technology leadership. This ePortfolio represents the foundation of my technical experience and will continue to evolve as I gain additional skills and professional experience.
